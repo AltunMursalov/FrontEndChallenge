@@ -10,6 +10,10 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: '/',
+      redirect: '/about'
+    },
+    {
       path: '/about',
       name: 'About',
       component: () => import('./views/About.vue')
@@ -28,6 +32,15 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: () => import('./views/Contact.vue')
-    }
+    },
+    {
+       path: '/404', 
+       name: 'notFound',
+       component: () => import('./views/NotFound.vue')
+    },  
+    { 
+      path: '*', 
+      redirect: '/404' 
+    }  
   ]
 })

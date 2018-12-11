@@ -54,4 +54,8 @@ import store from "store.js"
   bottom: 0px;
   left: 0px;
 }
+
+label{
+  color: blue;
+}
 </style>

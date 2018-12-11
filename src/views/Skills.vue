@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <label @click="next">Next page</label>
+    <label @click="next">Next page →</label>
   </div>
 </template>
 

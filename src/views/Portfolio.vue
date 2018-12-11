@@ -1,6 +1,7 @@
 <template>
   <div class="portfolio">
-    <label @click="next">Next page</label>
+    <a href="https://github.com/AltunMursalov">Visit my GitHub!</a><br>
+    <label @click="next">Next page →</label>
   </div>
 </template>
 
